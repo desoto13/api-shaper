@@ -42,3 +42,5 @@ rails s
 | VERB | Endpoints | Description |
 |:----:|:---------:|:-----------:|
 | POST | /api/v1/reservations | Create Reservations |
+
+Note: The assumption is id_number is a government id_number
