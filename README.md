@@ -4,7 +4,7 @@
 below are the versions used to create this app
 - ruby 3.1.2
 - Rails 7.2.2.1
-- node v122.2.0
+- node v22.2.0
 - yarn 1.22.19
 - database: postgres (PostgreSQL) 15.1
 
@@ -39,6 +39,6 @@ rails s
 
 ## API definitions
 
-| VERB | Endpoints | Query Params | Body Params | Description |
+| VERB | Endpoints | Description |
 |:----:|:---------:|:------------:|:-----------:|:-----------:|
-| POST | /api/v1/reservations | N/A | Any of the Payloads on the Assignment | Create Reservations |
+| POST | /api/v1/reservations | Create Reservations |
