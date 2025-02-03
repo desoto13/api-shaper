@@ -40,5 +40,5 @@ rails s
 ## API definitions
 
 | VERB | Endpoints | Description |
-|:----:|:---------:|:------------:|:-----------:|:-----------:|
+|:----:|:---------:|:-----------:|
 | POST | /api/v1/reservations | Create Reservations |
