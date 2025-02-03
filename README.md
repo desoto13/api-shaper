@@ -1,24 +1,44 @@
-# README
+# API Shaper
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Versions
+below are the versions used to create this app
+- ruby 3.1.2
+- Rails 7.2.2.1
+- node v122.2.0
+- yarn 1.22.19
+- database: postgres (PostgreSQL) 15.1
 
-Things you may want to cover:
+## Getting Started
 
-* Ruby version
+Clone the repo:
+```sh
+git@github.com:desoto13/api-shaper.git
+```
 
-* System dependencies
+Run the bundler
+```sh
+bundle install
+```
 
-* Configuration
+Assuming the postgresql has already been setup with the app, intiate the database
+```sh
+pg_ctl start
+(Note: kindly create a postgres user profile api_shaper via postgres CLI) 
+rails db:create
+```
+Run the migrations
+```sh
+rails db:migrate
+```
 
-* Database creation
+## Running the app
+Run the server
+```sh
+rails s
+```
 
-* Database initialization
+## API definitions
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+| VERB | Endpoints | Query Params | Body Params | Description |
+|:----:|:---------:|:------------:|:-----------:|:-----------:|
+| POST | /api/v1/reservations | N/A | Any of the Payloads on the Assignment | Create Reservations |
