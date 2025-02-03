@@ -13,8 +13,6 @@ class KeywordValueFinderService
   private
 
   def find_keyword_value(params, keyword)
-    return if @result_value
-
     if params.is_a?(Hash)
       params.each do |key, value|
         if key.to_s.include?(keyword)
