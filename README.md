@@ -43,4 +43,4 @@ rails s
 |:----:|:---------:|:-----------:|
 | POST | /api/v1/reservations | Create Reservations |
 
-Note: The assumption is id_number is a government id_number
+Note: The assumption is id or guest_id is a government id_number
